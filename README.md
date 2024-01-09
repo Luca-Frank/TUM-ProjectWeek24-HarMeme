@@ -78,6 +78,19 @@ The reason for this classification for harmful speech is that with only using "v
 
 
 ## Explainable AI
+
 ### LIME
 - https://github.com/marcotcr/lime
-## Classifying Pictures
+#### Random Forest
+##### Optimizing Hyperparameters
+To optimize the hyperparameters we used the GridSearch implemented in the sklearn library. We found that with these hyperparameters for our Random Forest Model we can maximize the F1-Score:
+
+##### X-AI
+We started using explainable AI methods first on simpler models where we can quickly implement methods to explain the decisions of the models in order to get a first overview of the impactful variables in our data.
+
+From the lime library we used the LimeTextExplainer. This allows us to calculate for each text the probability of being labeled as harmful. Further it gives us the words with its corresponding weight. This we can use to get a deeper insight into what words have a large impact on our model to determine wether a meme-caption is harmful or harmless. 
+From this we visualize what words are overall very often appearing in our text which also have a high impact on the weight.
+
+![Top 20 Words that had the most impact on determining wether a Random Forest Model classifies a text as harmful or not harmful](/plots/RandomForest_LimeTop20Words_Features2.png)
+#### Inception_v3 (Pretrained pytorch model)
+
