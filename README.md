@@ -5,6 +5,7 @@
 - Bert Text Classification: https://www.tensorflow.org/text/tutorials/classify_text_with_bert
 - Visual Bert: https://huggingface.co/docs/transformers/model_doc/visual_bert
 - HarMeme: https://github.com/di-dimitrov/harmeme
+- Lime: https://github.com/marcotcr/lime/blob/master/doc/notebooks/
 
 ## Installation
 ### Spacy
