@@ -74,8 +74,69 @@ The reason for this classification for harmful speech is that with only using "v
 | weighted avg | 0.79      | 0.79   | 0.79     | 354     |
 
 ### BERT
-### Neural-Network (Pytorch)
 
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.85      | 0.85   | 0.85     | 230     |
+| 1            | 0.72      | 0.72   | 0.72     | 124     |
+| accuracy     |           |        | 0.80     | 354     |
+| macro avg    | 0.78      | 0.78   | 0.78     | 354     |
+| weighted avg | 0.80      | 0.80   | 0.80     | 354     |
+#### Additional Information
+|           | precision |
+|-----------|---------|
+| Test Loss | 0.4565      |
+| Test Accuracy | 0.8023      |
+| Test Precision | 0.7177      |
+| Test Recall | 0.7177      |
+| Test F1-Score | 0.7177      |
+
+- Graphs for the loss function and accuracy are shown in the jupiter notebook in the bert file.
+  - In it we can see that the loss function is increasing after the first epoch, which means that the model is not learning.
+- Increasing the batch or epoch size does not improve the results for BERT, which is expected from BERT.
+
+#### Addition of LoRA
+Fine Tuning with the help of LoRA (Label Refinery) does not improve the results of BERT. The results are as follows:
+
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.65      | 1.00   | 0.79     | 230     |
+| 1            | 0.00      | 0.00   | 0.00     | 124     |
+| accuracy     |           |        | 0.65     | 354     |
+| macro avg    | 0.32      | 0.50   | 0.39     | 354     |
+| weighted avg | 0.42      | 0.65   | 0.51     | 354     |
+
+- Note: 0.00 and 1.00 results due to zero division errors, which is 
+usually caused by a data set which is not big 
+enough or has no occurrences of the label in 
+question. 
+- Evolution of the loss function over time is shown in the jupiter notebook in the lora bert file.
+  - In it we can see that the loss function is decreasing over time, which is a good sign.
+- These results can partially be explained by our low datasize and calculation power.
+
+### Neural-Network (Pytorch)
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.79      | 0.75   | 0.77     | 230     |
+| 1            | 0.58      | 0.64   | 0.61     | 124     |
+| accuracy     |           |        | 0.71     | 354     |
+| macro avg    | 0.69      | 0.69   | 0.69     | 354     |
+| weighted avg | 0.72      | 0.71   | 0.71     | 354     |
+
+Also has one of the shortest training times of all classifiers.
+
+### SVM (Support Vector Machine)
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.74      | 0.91   | 0.82     | 577     |
+| 1            | 0.74      | 0.43   | 0.54     | 327     |
+| accuracy     |           |        | 0.74     | 904     |
+| macro avg    | 0.74      | 0.67   | 0.68     | 904     |
+| weighted avg | 0.74      | 0.74   | 0.72     | 904     |
+
+- Additional Charts are included in the Jupyter Notebook in the SVM file.
+- Second more improved SVM model:
+- 
 
 ## Explainable AI
 
