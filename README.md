@@ -93,6 +93,7 @@ The reason for this classification for harmful speech is that with only using "v
 
 - Graphs for the loss function and accuracy are shown in the jupiter notebook in the bert file.
   - In it we can see that the loss function is increasing after the first epoch, which means that the model is not learning.
+- Increasing the batch or epoch size does not improve the results for BERT, which is expected from BERT.
 
 #### Addition of LoRA
 Fine Tuning with the help of LoRA (Label Refinery) does not improve the results of BERT. The results are as follows:
