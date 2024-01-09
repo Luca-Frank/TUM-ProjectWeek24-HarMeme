@@ -46,8 +46,32 @@ The reason for this classification for harmful speech is that with only using "v
 
 ## Used Classifiers
 ### AdaBoost
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.81      | 0.84   | 0.82     | 230     |
+| 1            | 0.68      | 0.64   | 0.66     | 124     |
+| accuracy     |           |        | 0.77     | 354     |
+| macro avg    | 0.75      | 0.74   | 0.74     | 354     |
+| weighted avg | 0.77      | 0.77   | 0.77     | 354     |
+
 ### Decision Trees
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.82      | 0.86   | 0.84     | 230     |
+| 1            | 0.71      | 0.65   | 0.68     | 124     |
+| accuracy     |           |        | 0.77     | 354     |
+| macro avg    | 0.76      | 0.75   | 0.76     | 354     |
+| weighted avg | 0.78      | 0.78   | 0.78     | 354     |
+
 ### Gradient Boosting Classifier
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.81      | 0.88   | 0.85     | 230     |
+| 1            | 0.74      | 0.63   | 0.68     | 124     |
+| accuracy     |           |        | 0.77     | 354     |
+| macro avg    | 0.78      | 0.75   | 0.76     | 354     |
+| weighted avg | 0.79      | 0.79   | 0.79     | 354     |
+
 ### BERT
 ### Neural-Network (Pytorch)
 
