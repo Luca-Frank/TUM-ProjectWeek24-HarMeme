@@ -125,6 +125,18 @@ question.
 
 Also has one of the shortest training times of all classifiers.
 
+### SVM (Support Vector Machine)
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0            | 0.74      | 0.91   | 0.82     | 577     |
+| 1            | 0.74      | 0.43   | 0.54     | 327     |
+| accuracy     |           |        | 0.74     | 904     |
+| macro avg    | 0.74      | 0.67   | 0.68     | 904     |
+| weighted avg | 0.74      | 0.74   | 0.72     | 904     |
+
+- Additional Charts are included in the Jupyter Notebook in the SVM file.
+
+
 ## Explainable AI
 ### LIME
 - https://github.com/marcotcr/lime
