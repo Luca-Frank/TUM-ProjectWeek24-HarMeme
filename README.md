@@ -135,7 +135,8 @@ Also has one of the shortest training times of all classifiers.
 | weighted avg | 0.74      | 0.74   | 0.72     | 904     |
 
 - Additional Charts are included in the Jupyter Notebook in the SVM file.
-
+- Second more improved SVM model:
+- 
 
 ## Explainable AI
 ### LIME
