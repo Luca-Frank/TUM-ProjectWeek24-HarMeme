@@ -140,6 +140,19 @@ Also has one of the shortest training times of all classifiers.
 
 ### Six models performance on binary text classification
 ![Six models performance on binary text classification](/plots/models_performance.jpg)
+
+### Multi text classification on harful speech based on bert(individual, organization, community, society)
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| individual   | 0.79      | 0.84   | 0.82     | 37      |
+| organization | 0.91      | 0.87   | 0.89     | 46      |
+| community    | 0.00      | 0.00   | 0.00     | 4       |
+| society      | 0.58      | 0.70   | 0.64     | 20      |
+| accuracy     |           |        | 0.79     | 107     |
+| macro avg    | 0.57      | 0.60   | 0.59     | 107     |
+| weighted avg | 0.77      | 0.79   | 0.78     | 107     |
+- Because of small and not balabced dateset, some performance of bert model not perform well.
+         
 ## Explainable AI
 
 ### LIME
