@@ -239,8 +239,8 @@
         ]
       },
       "gridPos": {
-        "h": 13,
-        "w": 18,
+        "h": 14,
+        "w": 24,
         "x": 0,
         "y": 14
       },
@@ -309,6 +309,6 @@
   "timezone": "",
   "title": "tum_project",
   "uid": "db0b7b58-8f79-4e96-812e-5b4b3ded384d",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }
