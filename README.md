@@ -136,8 +136,9 @@ Also has one of the shortest training times of all classifiers.
 
 - Additional Charts are included in the Jupyter Notebook in the SVM file.
 - Second more improved SVM model:
-- 
 
+### Six models performance on binary text classification
+![Six models performance on binary text classification](/plots/models_performance.jpg)
 ## Explainable AI
 
 ### LIME
