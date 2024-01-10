@@ -6,7 +6,7 @@
 - Visual Bert: https://huggingface.co/docs/transformers/model_doc/visual_bert
 - HarMeme: https://github.com/di-dimitrov/harmeme
 - Lime: https://github.com/marcotcr/lime/blob/master/doc/notebooks/
-
+- Lime: - https://github.com/marcotcr/lime
 ## Installation
 ### Spacy
 - pip install spacy
@@ -126,6 +126,7 @@ question.
 Also has one of the shortest training times of all classifiers.
 
 ### SVM (Support Vector Machine)
+#### Michael
 |              | precision | recall | f1-score | support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.74      | 0.91   | 0.82     | 577     |
@@ -137,6 +138,11 @@ Also has one of the shortest training times of all classifiers.
 - Additional Charts are included in the Jupyter Notebook in the SVM file.
 - Second more improved SVM model:
 
+#### Luca
+![](/plots/SVM_Precision_Recall_Curve.jpeg)
+![](/plots/SVM_ROC_Curve.jpeg)
+![](/plots/SVM_PCA_PredClass.jpeg)
+![](/plots/SVM_PCA_TrueClass.jpeg)
 ### Six models performance on binary text classification
 ![Six models performance on binary text classification](/plots/models_performance.jpg)
 
@@ -155,7 +161,6 @@ Also has one of the shortest training times of all classifiers.
 ## Explainable AI
 
 ### LIME
-- https://github.com/marcotcr/lime
 #### Random Forest
 ##### Optimizing Hyperparameters
 To optimize the hyperparameters we used the GridSearch implemented in the sklearn library. We found that with these hyperparameters for our Random Forest Model we can maximize the F1-Score:
@@ -168,4 +173,6 @@ From this we visualize what words are overall very often appearing in our text w
 
 ![Top 20 Words that had the most impact on determining wether a Random Forest Model classifies a text as harmful or not harmful](/plots/RandomForest_LimeTop20Words_Features2.png)
 #### Inception_v3 (Pretrained pytorch model)
+
+### Deceptron2
 
