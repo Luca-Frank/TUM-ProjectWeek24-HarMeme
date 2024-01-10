@@ -6,7 +6,7 @@
 - Visual Bert: https://huggingface.co/docs/transformers/model_doc/visual_bert
 - HarMeme: https://github.com/di-dimitrov/harmeme
 - Lime: https://github.com/marcotcr/lime/blob/master/doc/notebooks/
-- Lime: - https://github.com/marcotcr/lime
+- Classifier Script: https://github.com/facebookresearch/mmf/blob/main/tools/scripts/features/extract_features_vmb.py
 ## Installation
 ### Spacy
 - pip install spacy
@@ -146,7 +146,7 @@ Also has one of the shortest training times of all classifiers.
 ### Six models performance on binary text classification
 ![Six models performance on binary text classification](/plots/models_performance.jpg)
 
-### Multi text classification on harful speech based on belt(individual, organization, community, society)
+### Multi text classification on harful speech based on bert(individual, organization, community, society)
 |              | precision | recall | f1-score | support |
 |--------------|-----------|--------|----------|---------|
 | individual   | 0.79      | 0.84   | 0.82     | 37      |
@@ -156,7 +156,7 @@ Also has one of the shortest training times of all classifiers.
 | accuracy     |           |        | 0.79     | 107     |
 | macro avg    | 0.57      | 0.60   | 0.59     | 107     |
 | weighted avg | 0.77      | 0.79   | 0.78     | 107     |
-- Because of small and not balabced dateset, some performance of belt model not perform well.
+- Because of small and not balabced dateset, some performance of bert model not perform well.
          
 ## Explainable AI
 
