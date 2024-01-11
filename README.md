@@ -159,7 +159,7 @@ Also has one of the shortest training times of all classifiers.
 - Because of small and not balabced dateset, some performance of bert model not perform well.
 
 ### Dataset we used
-![Dataset](/plots/dataset.jpg)
+![Dataset](/plots/dataset_memes.jpg)
          
 ## Explainable AI
 
