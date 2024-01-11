@@ -157,6 +157,9 @@ Also has one of the shortest training times of all classifiers.
 | macro avg    | 0.57      | 0.60   | 0.59     | 107     |
 | weighted avg | 0.77      | 0.79   | 0.78     | 107     |
 - Because of small and not balabced dateset, some performance of bert model not perform well.
+
+### Dataset we used
+![Dataset](/plots/dataset_memes.jpg)
          
 ## Explainable AI
 
