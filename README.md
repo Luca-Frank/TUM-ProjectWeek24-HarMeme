@@ -2,6 +2,7 @@
 
 ## Resources:
 - Hateful Meme Competition: https://www.drivendata.org/competitions/64/hateful-memes/page/205/
+- Dataset: https://arxiv.org/pdf/2110.00413.pdf
 - Bert Text Classification: https://www.tensorflow.org/text/tutorials/classify_text_with_bert
 - Visual Bert: https://huggingface.co/docs/transformers/model_doc/visual_bert
 - HarMeme: https://github.com/di-dimitrov/harmeme
