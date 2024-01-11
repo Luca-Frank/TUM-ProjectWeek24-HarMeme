@@ -160,11 +160,11 @@ Also has one of the shortest training times of all classifiers.
 
 ### Dataset we used
 ![Dataset](/plots/dataset_memes.jpg)
-         
+ 
 ## Explainable AI
 
 ### LIME
-#### Random Forest
+#### Random Forest (Luca)
 ##### Optimizing Hyperparameters
 To optimize the hyperparameters we used the GridSearch implemented in the sklearn library. We found that with these hyperparameters for our Random Forest Model we can maximize the F1-Score:
 
@@ -172,9 +172,17 @@ To optimize the hyperparameters we used the GridSearch implemented in the sklear
 We started using explainable AI methods first on simpler models where we can quickly implement methods to explain the decisions of the models in order to get a first overview of the impactful variables in our data.
 
 From the lime library we used the LimeTextExplainer. This allows us to calculate for each text the probability of being labeled as harmful. Further it gives us the words with its corresponding weight. This we can use to get a deeper insight into what words have a large impact on our model to determine wether a meme-caption is harmful or harmless. 
-From this we visualize what words are overall very often appearing in our text which also have a high impact on the weight.
+
+The way this is calculated is with the function `explain_instance()` function. Here we specified to extract the top 5 features for the text which have the most explaining power when it comes to classifying the text as a harmful meme or a harmless meme.
+
+First we were intrested which words appear very often, therefore often posess a high explaining power for our model. We counted the overall appearence among the top 5 explaining features and colored the graph by whether or not the model predicted this word to be in a harmfull or harmless meme.
 
 ![Top 20 Words that had the most impact on determining wether a Random Forest Model classifies a text as harmful or not harmful](/plots/RandomForest_LimeTop20Words_Features2.png)
+
+This however allows us to only look at the number of occurences for each word. The explainers provided by LIME also have a value associated with it. The values reange between 1 and -1 and represent the weight each word has on influencing the classification. A positive value means that this word nudged the classification to label the text as 1, in our case a harmful meme. We can therefore conclude that positive values are more associated with harmful memes while negative values are associated with harmless memes.
+
+The next graphs show the top 10 features with the highest average positive or negative weight. This allows us to see which words a generally associated with harmfull and harmless memes.
+
 #### Inception_v3 (Pretrained pytorch model)
 
 ### Deceptron2
