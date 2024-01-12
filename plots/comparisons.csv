@@ -1,0 +1,8 @@
+Model,Precision,Recall,Accuracy,F1-Score
+Gradient_Boosting,0.74,0.64,0.79,0.68
+BERT,0.72,0.72,0.8,0.72
+Decision_Trees,0.68,0.64,0.77,0.66
+AdaBoost,0.68,0.64,0.77,0.66
+Neural_Network,0.59,0.61,0.71,0.59
+SVM,0.74,0.43,0.74,0.54
+Random_Forest,0.63,0.67,0.75,0.65
